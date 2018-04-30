@@ -50,9 +50,10 @@
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
-                android:onClick="useScissors"
+                android:onClick="scissorsClick"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/number_of_scissors"
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="end"
@@ -76,9 +77,10 @@
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
-                android:onClick="useJunk"
+                android:onClick="junkClick"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/number_of_junk"
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="end"
@@ -102,9 +104,10 @@
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
-                android:onClick="useGold"
+                android:onClick="goldClick"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/number_of_gold"
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="end"
@@ -128,9 +131,10 @@
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
-                android:onClick="useSandwich"
+                android:onClick="sandwichClick"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/number_of_sandwich"
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="end"
@@ -154,9 +158,10 @@
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
-                android:onClick="useCompass"
+                android:onClick="compassClick"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/number_of_compass"
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="end"
@@ -180,9 +185,10 @@
                 android:gravity="center"
                 android:text="Use"
                 android:padding="3dip"
-                android:onClick="useWater"
+                android:onClick="waterClick"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/number_of_water"
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="end"

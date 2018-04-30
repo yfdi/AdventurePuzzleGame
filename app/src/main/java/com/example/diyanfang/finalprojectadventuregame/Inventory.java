@@ -9,12 +9,20 @@ import android.widget.Toast;
 
 public class Inventory extends AppCompatActivity {
 
-    TextView useScissors;
-    TextView useJunk;
-    TextView useGold;
-    TextView useSandwich;
-    TextView useCompass;
-    TextView useWater;
+    int numberOfScissors = 0;
+    int numberOfJunk = 0;
+    int numberOfGold = 0;
+    int numberOfSandwich = 0;
+    int numberOfCompass = 0;
+    int numberOfWater = 0;
+
+    TextView scissorsNumber;
+    TextView junkNumber;
+    TextView goldNumber;
+    TextView sandwichNumber;
+    TextView compassNumber;
+    TextView waterNumber;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,36 +31,84 @@ public class Inventory extends AppCompatActivity {
 
         Intent inventoryIntent = getIntent();
 
-        useScissors = findViewById(R.id.use_scissors);
-        useJunk = findViewById(R.id.use_junk);
-        useGold = findViewById(R.id.use_gold);
-        useSandwich = findViewById(R.id.use_sandwich);
-        useCompass = findViewById(R.id.use_compass);
-        useWater = findViewById(R.id.use_water);
+        TextView useScissors = findViewById(R.id.use_scissors);
+        TextView useJunk = findViewById(R.id.use_junk);
+        TextView useGold = findViewById(R.id.use_gold);
+        TextView useSandwich = findViewById(R.id.use_sandwich);
+        TextView useCompass = findViewById(R.id.use_compass);
+        TextView useWater = findViewById(R.id.use_water);
+
+        scissorsNumber = findViewById(numberOfScissors);
+        junkNumber = findViewById(numberOfJunk);
+        goldNumber = findViewById(numberOfGold);
+        sandwichNumber = findViewById(numberOfSandwich);
+        compassNumber = findViewById(numberOfCompass);
+        waterNumber = findViewById(numberOfWater);
+
     }
 
 
-    public void useScissors(View view) {
+    public void scissorsClick(View view) {
+
+        if (numberOfScissors == 0) {
+            return;
+        }
+        numberOfScissors = numberOfScissors - 1;
+        scissorsNumber.setText("" + numberOfScissors);
         Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
     }
 
-    public void useJunk(View view) {
+    public void junkClick(View view) {
+
+        if (numberOfJunk == 0) {
+            return;
+        }
+        numberOfJunk --;
+        junkNumber.setText("" + numberOfJunk);
+
         Toast.makeText(this, "You used what first appeared to be junk!", Toast.LENGTH_SHORT).show();
     }
 
-    public void useGold(View view) {
+    public void goldClick(View view) {
+        if (numberOfGold == 0) {
+            return;
+        }
+        numberOfGold --;
+        goldNumber.setText("" + numberOfGold);
+
         Toast.makeText(this, "You gave the otter your gold!", Toast.LENGTH_SHORT).show();
     }
 
-    public void useSandwich(View view) {
+    public void sandwichClick(View view) {
+
+        if (numberOfSandwich == 0) {
+            return;
+        }
+        numberOfSandwich --;
+        sandwichNumber.setText("" + numberOfSandwich);
+
         Toast.makeText(this, "Turns out you just had to give them a sandwich!", Toast.LENGTH_SHORT).show();
     }
 
-    public void useCompass(View view) {
+    public void compassClick(View view) {
+
+        if (numberOfCompass == 0) {
+            return;
+        }
+        numberOfCompass --;
+        compassNumber.setText("" + numberOfCompass);
+
         Toast.makeText(this, "The compass appears to be pointed West.", Toast.LENGTH_SHORT).show();
     }
 
-    public void useWater(View view) {
+    public void waterClick(View view) {
+
+        if (numberOfWater == 0) {
+            return;
+        }
+        numberOfWater --;
+        waterNumber.setText("" + numberOfWater);
+
         Toast.makeText(this, "The water got rid of the fire!", Toast.LENGTH_SHORT).show();
     }
 }

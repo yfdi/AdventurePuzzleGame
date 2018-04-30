@@ -18,6 +18,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private List<Quiz> quizzes;
+    ArrayList<InventoryList> inventoryList = new ArrayList<>();
     private QuizAdapter quizAdapter;
 
     @Override
@@ -71,20 +72,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    private Quiz getRandomQuiz() {
-//        int num = (int) (Math.random() * 5);
-//        switch (num) {
-//            case 0:
-//                return new Quiz(R.string.aqua_city, R.string.about_aqua_city, R.drawable.aqua_city, false);
-//            case 1:
-//                return new Quiz(R.string.gold_city, R.string.about_gold_city, R.drawable.gold_city, false);
-//            case 2:
-//                return new Quiz(R.string.flame_city, R.string.about_flame_city, R.drawable.flame_city, false);
-//            case 3:
-//                return new Quiz(R.string.desert_city, R.string.about_desert_city, R.drawable.desert_city, false);
-//            default:
-//                return new Quiz(R.string.earth_city, R.string.about_earth_city, R.drawable.earth_snapshot, false);
-//        }
-//    }
 
 }
