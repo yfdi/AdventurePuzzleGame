@@ -14,21 +14,23 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="66dp"
         android:text="Can you help it out?"
-        android:textSize="15sp"
+        android:textSize="16sp"
         android:id="@+id/textView" />
 
     <ImageView
         android:id="@+id/dolphin_tangled"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dolphin_tangled"/>
+        android:src="@drawable/dolphin_tangled"
+        />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView">
+        android:layout_alignStart="@+id/textView"
+        android:layout_centerHorizontal="true">
 
         <ImageView
             android:id="@+id/spanner"

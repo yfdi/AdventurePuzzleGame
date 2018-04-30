@@ -57,34 +57,34 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.add:
-                quizzes.add(getRandomQuiz());
-                quizAdapter.notifyDataSetChanged();
-                return true;
-            case R.id.save:
-                Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
-            case R.id.share:
-                Toast.makeText(this, "Share it baby", Toast.LENGTH_SHORT).show();
+            case R.id.inventory:
+                Intent inventoryIntent = new Intent(this, Inventory.class);
+                startActivity(inventoryIntent);
+            case R.id.hint:
+                Toast.makeText(this, "No need for a hint, you can do it!", Toast.LENGTH_SHORT).show();
+//            case R.id.add:
+//                quizzes.add(getRandomQuiz());
+//                quizAdapter.notifyDataSetChanged();
+//                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
-    private Quiz getRandomQuiz() {
-        int num = (int) (Math.random() * 5);
-        switch (num) {
-            case 0:
-                return new Quiz(R.string.aqua_city, R.string.about_aqua_city, R.drawable.aqua_city, false);
-            case 1:
-                return new Quiz(R.string.gold_city, R.string.about_gold_city, R.drawable.gold_city, false);
-            case 2:
-                return new Quiz(R.string.flame_city, R.string.about_flame_city, R.drawable.flame_city, false);
-            case 3:
-                return new Quiz(R.string.desert_city, R.string.about_desert_city, R.drawable.desert_city, false);
-            default:
-                return new Quiz(R.string.earth_city, R.string.about_earth_city, R.drawable.earth_snapshot, false);
-
-        }
-    }
+//    private Quiz getRandomQuiz() {
+//        int num = (int) (Math.random() * 5);
+//        switch (num) {
+//            case 0:
+//                return new Quiz(R.string.aqua_city, R.string.about_aqua_city, R.drawable.aqua_city, false);
+//            case 1:
+//                return new Quiz(R.string.gold_city, R.string.about_gold_city, R.drawable.gold_city, false);
+//            case 2:
+//                return new Quiz(R.string.flame_city, R.string.about_flame_city, R.drawable.flame_city, false);
+//            case 3:
+//                return new Quiz(R.string.desert_city, R.string.about_desert_city, R.drawable.desert_city, false);
+//            default:
+//                return new Quiz(R.string.earth_city, R.string.about_earth_city, R.drawable.earth_snapshot, false);
+//        }
+//    }
 
 }

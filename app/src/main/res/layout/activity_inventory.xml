@@ -29,7 +29,7 @@
             <TextView
                 android:layout_column="3"
                 android:text="Number of Items"
-                android:gravity="right"
+                android:gravity="end"
                 android:padding="3dip"
                 style="@style/InventoryTitleTheme"/>
         </TableRow>
@@ -45,15 +45,17 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/use_scissors"
                 android:layout_column="2"
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
+                android:onClick="useScissors"
                 style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
-                android:gravity="right"
+                android:gravity="end"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
         </TableRow>
@@ -69,15 +71,17 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/use_junk"
                 android:layout_column="2"
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
+                android:onClick="useJunk"
                 style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
-                android:gravity="right"
+                android:gravity="end"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
         </TableRow>
@@ -93,15 +97,17 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/use_gold"
                 android:layout_column="2"
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
+                android:onClick="useGold"
                 style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
-                android:gravity="right"
+                android:gravity="end"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
         </TableRow>
@@ -117,15 +123,17 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/use_sandwich"
                 android:layout_column="2"
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
+                android:onClick="useSandwich"
                 style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
-                android:gravity="right"
+                android:gravity="end"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
         </TableRow>
@@ -141,15 +149,17 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/use_compass"
                 android:layout_column="2"
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
+                android:onClick="useCompass"
                 style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
-                android:gravity="right"
+                android:gravity="end"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
         </TableRow>
@@ -165,15 +175,17 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/use_water"
                 android:layout_column="2"
                 android:gravity="center"
                 android:text="Use"
                 android:padding="3dip"
+                android:onClick="useWater"
                 style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
-                android:gravity="right"
+                android:gravity="end"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
         </TableRow>
