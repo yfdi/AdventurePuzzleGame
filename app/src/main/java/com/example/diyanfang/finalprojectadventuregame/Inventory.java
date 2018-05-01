@@ -9,12 +9,12 @@ import android.widget.Toast;
 
 public class Inventory extends AppCompatActivity {
 
-    int numberOfScissors = 0;
-    int numberOfJunk = 0;
-    int numberOfGold = 0;
-    int numberOfSandwich = 0;
-    int numberOfCompass = 0;
-    int numberOfWater = 0;
+    int numberOfScissors=0;
+    int numberOfJunk=0 ;
+    int numberOfGold=0;
+    int numberOfSandwich=0;
+    int numberOfCompass=0;
+    int numberOfWater=0;
 
     TextView scissorsNumber;
     TextView junkNumber;
@@ -38,24 +38,27 @@ public class Inventory extends AppCompatActivity {
         TextView useCompass = findViewById(R.id.use_compass);
         TextView useWater = findViewById(R.id.use_water);
 
-        scissorsNumber = findViewById(numberOfScissors);
-        junkNumber = findViewById(numberOfJunk);
-        goldNumber = findViewById(numberOfGold);
-        sandwichNumber = findViewById(numberOfSandwich);
-        compassNumber = findViewById(numberOfCompass);
-        waterNumber = findViewById(numberOfWater);
+        scissorsNumber = findViewById(R.id.number_of_scissors);
+        junkNumber = findViewById(R.id.number_of_junk);
+        goldNumber = findViewById(R.id.number_of_gold);
+        sandwichNumber = findViewById(R.id.number_of_sandwich);
+        compassNumber = findViewById(R.id.number_of_compass);
+        waterNumber = findViewById(R.id.number_of_water);
+
+//        numberOfScissors = inventoryIntent.getIntExtra("Scissors", 1);
+//        scissorsNumber.setText(numberOfScissors);
 
     }
 
-
     public void scissorsClick(View view) {
-
-        if (numberOfScissors == 0) {
+        if (numberOfScissors != 0) {
+            numberOfScissors = numberOfScissors - 1;
+            scissorsNumber.setText("" + numberOfScissors);
+            Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
+        }
+        else{
             return;
         }
-        numberOfScissors = numberOfScissors - 1;
-        scissorsNumber.setText("" + numberOfScissors);
-        Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
     }
 
     public void junkClick(View view) {

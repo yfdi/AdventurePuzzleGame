@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "27886511341",
-    "firebase_url": "https://final-project-cfda9.firebaseio.com",
-    "project_id": "final-project-cfda9",
-    "storage_bucket": "final-project-cfda9.appspot.com"
+    "project_number": "52672489998",
+    "firebase_url": "https://finalprojectadventuregame.firebaseio.com",
+    "project_id": "finalprojectadventuregame",
+    "storage_bucket": "finalprojectadventuregame.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:27886511341:android:7a30b22fc70f22f8",
+        "mobilesdk_app_id": "1:52672489998:android:7a30b22fc70f22f8",
         "android_client_info": {
           "package_name": "com.example.diyanfang.finalprojectadventuregame"
         }
       },
       "oauth_client": [
         {
-          "client_id": "27886511341-5fg2orm9c6lnu8t36iqrlhf79p06a0eh.apps.googleusercontent.com",
+          "client_id": "52672489998-9o5k8amji4cav4jm2r9ebne2a3qqi898.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diyanfang.finalprojectadventuregame",
+            "certificate_hash": "e486db78d5c4682febe6bd8a6764a3da8923b577"
+          }
+        },
+        {
+          "client_id": "52672489998-5fcc5ccs706n15rlfnccvh2dd12la7t9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCb8a3rjaJGsc1ip3tOTImcSAZYyX58auc"
+          "current_key": "AIzaSyDb7Wj6il8Qn-uqGmSPnA0hyLeNggkMDn4"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52672489998-5fcc5ccs706n15rlfnccvh2dd12la7t9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
