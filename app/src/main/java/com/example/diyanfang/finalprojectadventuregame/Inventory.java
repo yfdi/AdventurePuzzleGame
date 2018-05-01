@@ -23,13 +23,13 @@ public class Inventory extends AppCompatActivity {
     TextView compassNumber;
     TextView waterNumber;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory);
 
         Intent inventoryIntent = getIntent();
+        //get inventoryIntent from MainActivity onCreateOptionsMenu and AquaCityQuiz onCreateOptionsMenu
 
         TextView useScissors = findViewById(R.id.use_scissors);
         TextView useJunk = findViewById(R.id.use_junk);
@@ -45,20 +45,34 @@ public class Inventory extends AppCompatActivity {
         compassNumber = findViewById(R.id.number_of_compass);
         waterNumber = findViewById(R.id.number_of_water);
 
-//        numberOfScissors = inventoryIntent.getIntExtra("Scissors", 1);
-//        scissorsNumber.setText(numberOfScissors);
+
+        //get intent from AquaCityQuiz when click the scissors icon to collect scissors
+        Intent scissorsIntent = getIntent();
+        numberOfScissors = scissorsIntent.getIntExtra("Scissors", 1);
+
+        scissorsNumber.setText(numberOfScissors);
 
     }
 
     public void scissorsClick(View view) {
-        if (numberOfScissors != 0) {
-            numberOfScissors = numberOfScissors - 1;
-            scissorsNumber.setText("" + numberOfScissors);
-            Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
-        }
-        else{
+        if (numberOfScissors == 0) {
             return;
         }
+        numberOfScissors --;
+        scissorsNumber.setText("" + scissorsNumber);
+
+        Toast.makeText(this, "You used what first appeared to be junk!", Toast.LENGTH_SHORT).show();
+
+//        if (numberOfScissors != 0) {
+//            numberOfScissors = numberOfScissors - 1;
+//            scissorsNumber.setText("" + scissorsNumber);
+//
+//            Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
+//        }
+//        else{
+//            return;
+//        }
+
     }
 
     public void junkClick(View view) {

@@ -51,7 +51,7 @@
             android:layout_height="45dp"
             android:layout_toRightOf="@+id/gear"
             android:src="@drawable/scissors"
-            android:onClick="getScissors"/>
+            android:onClick="collectScissors"/>
 
 
     </RelativeLayout>

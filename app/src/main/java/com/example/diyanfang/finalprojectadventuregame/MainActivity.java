@@ -17,8 +17,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private List<Quiz> quizzes;
+    private List<Quiz> quizzes = new ArrayList<>();
     private QuizAdapter quizAdapter;
+    private User currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initialData();
+//        getLevelUnlock();
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         //true if adapter changes cannot affect the size of the RecyclerView.
@@ -36,9 +38,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initialData() {
-        quizzes = new ArrayList<>();
 
-        quizzes.add(new Quiz(R.string.aqua_city, R.string.about_aqua_city, R.drawable.aqua_city, true));
+        quizzes.add(new Quiz(R.string.aqua_city, R.string.about_aqua_city, R.drawable.aqua_city, false));
         quizzes.add(new Quiz(R.string.gold_city, R.string.about_gold_city, R.drawable.gold_city, false));
         quizzes.add(new Quiz(R.string.flame_city, R.string.about_flame_city, R.drawable.flame_city, false));
         quizzes.add(new Quiz(R.string.desert_city, R.string.about_desert_city, R.drawable.desert_city, false));
@@ -70,6 +71,35 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+//    private void getLevelUnlock() {
+//        currentUser = new User("johnny@gmail.com", "1234", 2);
+//        int num = currentUser.getLevel();
+//        if (num == 2) {
+//            Quiz temp = new Quiz(R.string.gold_city, R.string.about_gold_city, R.drawable.gold_city, true);
+//            ImageView lock = (ImageView) findViewById(R.id.lock);
+//            lock.setImageResource(R.drawable.unlock);
+//            quizzes.set(1, temp);
+//        } else if (num == 3) {
+//            Quiz temp2 = new Quiz(R.string.flame_city, R.string.about_flame_city, R.drawable.flame_city, true);
+//            ImageView lock = (ImageView) findViewById(R.id.lock);
+//            lock.setImageResource(R.drawable.unlock);
+//            quizzes.set(2, temp2);
+//        } else if (num == 4) {
+//            Quiz temp3 = new Quiz(R.string.desert_city, R.string.about_desert_city, R.drawable.desert_city, true);
+//            ImageView lock = (ImageView) findViewById(R.id.lock);
+//            lock.setImageResource(R.drawable.unlock);
+//            quizzes.set(3, temp3);
+//        } else if (num == 5) {
+//            Quiz temp4 = new Quiz(R.string.earth_city, R.string.about_earth_city, R.drawable.earth_snapshot, true);
+//            ImageView lock = (ImageView) findViewById(R.id.lock);
+//            lock.setImageResource(R.drawable.unlock);
+//            quizzes.set(4, temp4);
+//        }
+//        else{
+//            return;
+//        }
+//    }
 
 
 }

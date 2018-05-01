@@ -49,10 +49,11 @@ public class AquaCityQuiz extends AppCompatActivity {
         }
     }
 
-//    public void getScissors(View view){
-//        int numScissors = 1;
-//        Intent scissorsIntent = new Intent(this, Inventory.class);
-//        scissorsIntent.putExtra("Scissors", numScissors);
-//        startActivity(scissorsIntent);
-//    }
+    public void collectScissors(View view){
+        int numScissors = 1;
+        Intent scissorsIntent = new Intent(this, Inventory.class);
+        scissorsIntent.putExtra("Scissors", numScissors);
+        startActivity(scissorsIntent);
+    }
+
 }
