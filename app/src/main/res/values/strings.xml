@@ -34,4 +34,6 @@
     <string name="email">Email</string>
     <string name="pass">Password</string>
 
+    <string name="goldCityPuzzle">Look at the pattern on the left and select the correct button for the corresponding image.</string>
+
 </resources>

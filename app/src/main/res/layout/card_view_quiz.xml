@@ -41,7 +41,6 @@
             android:textSize="30sp" />
 
 
-
         <TextView
             android:id="@+id/about_this_city"
             android:layout_width="wrap_content"

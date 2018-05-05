@@ -19,31 +19,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Inventory"
             android:label="Inventory"
             android:parentActivityName=".MainActivity"
-            tools:targetApi="jelly_bean"/>
-
+            tools:targetApi="jelly_bean" />
         <activity
             android:name=".AquaCity"
             android:label="Aqua City"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
-
         <activity
             android:name=".AquaCityQuiz"
             android:label="Aqua City Quiz"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
-
         <activity
             android:name=".GoldCity"
             android:label="Gold City"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
-
+        <activity android:name=".GoldCityQuiz"></activity>
     </application>
 
 </manifest>

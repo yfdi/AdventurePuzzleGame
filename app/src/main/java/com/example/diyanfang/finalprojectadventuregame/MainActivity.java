@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Quiz> quizzes = new ArrayList<>();
     private QuizAdapter quizAdapter;
     private User currentUser;
+    public int REQUEST_CODE = 901;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         initialData();
 //        getLevelUnlock();
+//        checkLogin();
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         //true if adapter changes cannot affect the size of the RecyclerView.
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         quizAdapter = new QuizAdapter(quizzes, this);
         recyclerView.setAdapter(quizAdapter);
+
     }
 
     private void initialData() {
@@ -53,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
 
         return super.onCreateOptionsMenu(menu);
+
+
     }
 
     @Override
@@ -72,9 +77,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    private void getLevelUnlock() {
+//    public void getLevelUnlock() {
+//
+//        ImageView lock = (ImageView) findViewById(R.id.lock);
+//        lock.setImageResource(R.drawable.unlock);
+
 //        currentUser = new User("johnny@gmail.com", "1234", 2);
+//
 //        int num = currentUser.getLevel();
+//
 //        if (num == 2) {
 //            Quiz temp = new Quiz(R.string.gold_city, R.string.about_gold_city, R.drawable.gold_city, true);
 //            ImageView lock = (ImageView) findViewById(R.id.lock);

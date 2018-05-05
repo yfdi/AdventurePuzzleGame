@@ -8,6 +8,7 @@
     tools:context="com.example.diyanfang.finalprojectadventuregame.AquaCityQuiz">
 
     <TextView
+        android:id="@+id/dolphin_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -15,7 +16,7 @@
         android:layout_marginTop="66dp"
         android:text="Can you help it out?"
         android:textSize="16sp"
-        android:id="@+id/textView" />
+        />
 
     <ImageView
         android:id="@+id/dolphin_tangled"
@@ -27,9 +28,9 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView"
+        android:layout_alignLeft="@+id/dolphin_textView"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView"
+        android:layout_alignStart="@+id/dolphin_textView"
         android:layout_centerHorizontal="true">
 
         <ImageView

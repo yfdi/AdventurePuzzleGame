@@ -7,10 +7,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AquaCityQuiz extends AppCompatActivity {
 
+    TextView dolphinText;
     ImageView dolphinQuizImage;
 
     @Override
@@ -21,6 +23,7 @@ public class AquaCityQuiz extends AppCompatActivity {
         Intent aquaQuizIntent = getIntent();
 
         dolphinQuizImage = findViewById(R.id.dolphin_tangled);
+        dolphinText = findViewById(R.id.dolphin_textView);
     }
 
     @Override
@@ -54,6 +57,9 @@ public class AquaCityQuiz extends AppCompatActivity {
         Intent scissorsIntent = new Intent(this, Inventory.class);
         scissorsIntent.putExtra("Scissors", numScissors);
         startActivity(scissorsIntent);
+
+        dolphinQuizImage.setImageResource(R.drawable.dolphin_set_free);
     }
+
 
 }

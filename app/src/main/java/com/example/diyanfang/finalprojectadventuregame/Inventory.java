@@ -9,12 +9,12 @@ import android.widget.Toast;
 
 public class Inventory extends AppCompatActivity {
 
-    int numberOfScissors=0;
-    int numberOfJunk=0 ;
-    int numberOfGold=0;
-    int numberOfSandwich=0;
-    int numberOfCompass=0;
-    int numberOfWater=0;
+    int numberOfScissors;
+    int numberOfJunk;
+    int numberOfGold;
+    int numberOfSandwich;
+    int numberOfCompass;
+    int numberOfWater;
 
     TextView scissorsNumber;
     TextView junkNumber;
@@ -23,13 +23,13 @@ public class Inventory extends AppCompatActivity {
     TextView compassNumber;
     TextView waterNumber;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory);
 
         Intent inventoryIntent = getIntent();
-        //get inventoryIntent from MainActivity onCreateOptionsMenu and AquaCityQuiz onCreateOptionsMenu
 
         TextView useScissors = findViewById(R.id.use_scissors);
         TextView useJunk = findViewById(R.id.use_junk);
@@ -45,33 +45,32 @@ public class Inventory extends AppCompatActivity {
         compassNumber = findViewById(R.id.number_of_compass);
         waterNumber = findViewById(R.id.number_of_water);
 
+        numberOfScissors = inventoryIntent.getIntExtra("Scissors", 0);
+        String textNumberOfScissors =  Integer.toString(numberOfScissors);
+        scissorsNumber.setText(textNumberOfScissors);
 
-        //get intent from AquaCityQuiz when click the scissors icon to collect scissors
-        Intent scissorsIntent = getIntent();
-        numberOfScissors = scissorsIntent.getIntExtra("Scissors", 1);
+        numberOfSandwich = inventoryIntent.getIntExtra("Sandwich", 0);
+        numberOfGold = inventoryIntent.getIntExtra("Gold", 0);
 
-        scissorsNumber.setText(numberOfScissors);
+        String textNumberOfGold =  Integer.toString(numberOfGold);
+        String textNumberOfSandwich =  Integer.toString(numberOfSandwich);
+
+        goldNumber.setText(textNumberOfGold);
+        sandwichNumber.setText(textNumberOfSandwich);
 
     }
 
     public void scissorsClick(View view) {
-        if (numberOfScissors == 0) {
+        if (numberOfScissors != 0) {
+            numberOfScissors = numberOfScissors - 1;
+            String textNumberOfScissors =  Integer.toString(numberOfScissors);
+            scissorsNumber.setText("" + textNumberOfScissors);
+            Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
+            finish();
+        }
+        else{
             return;
         }
-        numberOfScissors --;
-        scissorsNumber.setText("" + scissorsNumber);
-
-        Toast.makeText(this, "You used what first appeared to be junk!", Toast.LENGTH_SHORT).show();
-
-//        if (numberOfScissors != 0) {
-//            numberOfScissors = numberOfScissors - 1;
-//            scissorsNumber.setText("" + scissorsNumber);
-//
-//            Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
-//        }
-//        else{
-//            return;
-//        }
 
     }
 
@@ -84,6 +83,7 @@ public class Inventory extends AppCompatActivity {
         junkNumber.setText("" + numberOfJunk);
 
         Toast.makeText(this, "You used what first appeared to be junk!", Toast.LENGTH_SHORT).show();
+        finish();
     }
 
     public void goldClick(View view) {
