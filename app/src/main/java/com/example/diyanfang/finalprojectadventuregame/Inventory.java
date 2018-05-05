@@ -60,7 +60,7 @@ public class Inventory extends AppCompatActivity {
 
     }
 
-    public void scissorsClick(View view) {
+    public void useScissors(View view) {
         if (numberOfScissors != 0) {
             numberOfScissors = numberOfScissors - 1;
             String textNumberOfScissors =  Integer.toString(numberOfScissors);
@@ -74,7 +74,7 @@ public class Inventory extends AppCompatActivity {
 
     }
 
-    public void junkClick(View view) {
+    public void useJunk(View view) {
 
         if (numberOfJunk == 0) {
             return;
@@ -86,7 +86,7 @@ public class Inventory extends AppCompatActivity {
         finish();
     }
 
-    public void goldClick(View view) {
+    public void useGold(View view) {
         if (numberOfGold == 0) {
             return;
         }
@@ -96,7 +96,7 @@ public class Inventory extends AppCompatActivity {
         Toast.makeText(this, "You gave the otter your gold!", Toast.LENGTH_SHORT).show();
     }
 
-    public void sandwichClick(View view) {
+    public void useSandwich(View view) {
 
         if (numberOfSandwich == 0) {
             return;
@@ -107,7 +107,7 @@ public class Inventory extends AppCompatActivity {
         Toast.makeText(this, "Turns out you just had to give them a sandwich!", Toast.LENGTH_SHORT).show();
     }
 
-    public void compassClick(View view) {
+    public void useCompass(View view) {
 
         if (numberOfCompass == 0) {
             return;
@@ -118,7 +118,7 @@ public class Inventory extends AppCompatActivity {
         Toast.makeText(this, "The compass appears to be pointed West.", Toast.LENGTH_SHORT).show();
     }
 
-    public void waterClick(View view) {
+    public void useWater(View view) {
 
         if (numberOfWater == 0) {
             return;

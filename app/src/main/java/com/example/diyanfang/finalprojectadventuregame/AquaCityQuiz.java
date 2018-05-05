@@ -59,6 +59,7 @@ public class AquaCityQuiz extends AppCompatActivity {
         startActivity(scissorsIntent);
 
         dolphinQuizImage.setImageResource(R.drawable.dolphin_set_free);
+        dolphinText.setText(R.string.aqua_puzzled_solved);
     }
 
 

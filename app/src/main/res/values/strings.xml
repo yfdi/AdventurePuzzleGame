@@ -13,10 +13,16 @@
     <string name="about_desert_city">It is a barren area where little rain occurs. </string>
     <string name="about_earth_city">It is consisted of water, land and people.</string>
 
-    <string name="aqua_city_opening">You see dolphins swimming in groups, playing with each other. However, one of them gets caught in a tangle of space pollution.
+    <string name="aqua_city_opening">You see dolphins swimming in groups, playing with each other.
+        However, one of them gets caught in a tangle of space pollution.
         Could you help it to get out.</string>
+    <string name = "aqua_puzzled_solved">You freed the dolphin!</string>
+
     <string name="gold_city_opening">There is gold everywhere so it does not worth a penny.</string>
     <string name="desert_city_opening">In desert city, living conditions are hostile for all the creatures.</string>
+
+    <string name="goldCityPuzzle">Look at the pattern on the left and select the correct button for
+        the corresponding image.</string>
 
     <string name="true_button">True</string>
     <string name="false_button">False</string>
@@ -34,6 +40,6 @@
     <string name="email">Email</string>
     <string name="pass">Password</string>
 
-    <string name="goldCityPuzzle">Look at the pattern on the left and select the correct button for the corresponding image.</string>
+
 
 </resources>

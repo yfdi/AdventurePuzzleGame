@@ -50,7 +50,7 @@
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
-                android:onClick="scissorsClick"
+                android:onClick="useScissors"
                 style="@style/InventoryTheme"/>
             <TextView
                 android:id="@+id/number_of_scissors"
