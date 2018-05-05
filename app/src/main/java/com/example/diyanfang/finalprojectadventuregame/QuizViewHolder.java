@@ -22,7 +22,7 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
     public ImageView quizImage;
     public TextView quizName;
     public TextView aboutThisCity;
-//    public ImageView lock;
+    public ImageView lock;
 
     public boolean isQuizFinished;
     private Context context;
@@ -33,11 +33,9 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
         quizImage = (ImageView) itemView.findViewById(R.id.quiz_image);
         quizName = (TextView) itemView.findViewById(R.id.quiz_name);
         aboutThisCity = (TextView) itemView.findViewById(R.id.about_this_city);
-
-//        lock = itemView.findViewById(R.id.lock);
+        lock = itemView.findViewById(R.id.lock);
 
         this.context = context;
-
     }
 
     public void bind(final Quiz quiz) {
@@ -85,8 +83,7 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
             }
         });
 
-
-//        lock.setVisibility(View.INVISIBLE);
+        lock.setImageResource(R.drawable.unlock);
     }
 
     public void enterCity(){
