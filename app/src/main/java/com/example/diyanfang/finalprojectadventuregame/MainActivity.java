@@ -56,8 +56,6 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
 
         return super.onCreateOptionsMenu(menu);
-
-
     }
 
     @Override
@@ -74,6 +72,16 @@ public class MainActivity extends AppCompatActivity {
 //                return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public void checkLogin(){
+        if( currentUser == null ) {
+            Intent intent = new Intent(this, Login.class);
+            startActivityForResult(intent, REQUEST_CODE);
+        }
+        else{
+            return;
         }
     }
 

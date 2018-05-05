@@ -39,7 +39,13 @@
             android:label="Gold City"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
-        <activity android:name=".GoldCityQuiz"></activity>
+
+        <activity
+            android:name=".GoldCityQuiz"
+            android:label="Gold City Quiz"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+
     </application>
 
 </manifest>

@@ -23,13 +23,10 @@ public class Inventory extends AppCompatActivity {
     TextView compassNumber;
     TextView waterNumber;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory);
-
-        Intent inventoryIntent = getIntent();
 
         TextView useScissors = findViewById(R.id.use_scissors);
         TextView useJunk = findViewById(R.id.use_junk);
@@ -45,19 +42,19 @@ public class Inventory extends AppCompatActivity {
         compassNumber = findViewById(R.id.number_of_compass);
         waterNumber = findViewById(R.id.number_of_water);
 
+        Intent inventoryIntent = getIntent();
+
         numberOfScissors = inventoryIntent.getIntExtra("Scissors", 0);
         String textNumberOfScissors =  Integer.toString(numberOfScissors);
         scissorsNumber.setText(textNumberOfScissors);
 
         numberOfSandwich = inventoryIntent.getIntExtra("Sandwich", 0);
-        numberOfGold = inventoryIntent.getIntExtra("Gold", 0);
-
-        String textNumberOfGold =  Integer.toString(numberOfGold);
         String textNumberOfSandwich =  Integer.toString(numberOfSandwich);
-
-        goldNumber.setText(textNumberOfGold);
         sandwichNumber.setText(textNumberOfSandwich);
 
+        numberOfGold = inventoryIntent.getIntExtra("Gold", 0);
+        String textNumberOfGold = Integer.toString(numberOfGold);
+        goldNumber.setText(textNumberOfGold);
     }
 
     public void useScissors(View view) {
@@ -66,12 +63,12 @@ public class Inventory extends AppCompatActivity {
             String textNumberOfScissors =  Integer.toString(numberOfScissors);
             scissorsNumber.setText("" + textNumberOfScissors);
             Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
-            finish();
         }
         else{
             return;
         }
 
+        finish();
     }
 
     public void useJunk(View view) {
@@ -80,7 +77,8 @@ public class Inventory extends AppCompatActivity {
             return;
         }
         numberOfJunk --;
-        junkNumber.setText("" + numberOfJunk);
+        String textNumberOfJunk =  Integer.toString(numberOfJunk);
+        junkNumber.setText("" + textNumberOfJunk);
 
         Toast.makeText(this, "You used what first appeared to be junk!", Toast.LENGTH_SHORT).show();
         finish();
@@ -91,9 +89,10 @@ public class Inventory extends AppCompatActivity {
             return;
         }
         numberOfGold --;
-        goldNumber.setText("" + numberOfGold);
+        String textNumberOfGold =  Integer.toString(numberOfGold);
+        goldNumber.setText("" + textNumberOfGold);
 
-        Toast.makeText(this, "You gave the otter your gold!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "You gave the octopus your gold!", Toast.LENGTH_SHORT).show();
     }
 
     public void useSandwich(View view) {
@@ -102,7 +101,8 @@ public class Inventory extends AppCompatActivity {
             return;
         }
         numberOfSandwich --;
-        sandwichNumber.setText("" + numberOfSandwich);
+        String textNumberOfSandwich =  Integer.toString(numberOfSandwich);
+        sandwichNumber.setText("" + textNumberOfSandwich);
 
         Toast.makeText(this, "Turns out you just had to give them a sandwich!", Toast.LENGTH_SHORT).show();
     }
@@ -113,7 +113,8 @@ public class Inventory extends AppCompatActivity {
             return;
         }
         numberOfCompass --;
-        compassNumber.setText("" + numberOfCompass);
+        String textNumberOfCompass =  Integer.toString(numberOfCompass);
+        compassNumber.setText("" + textNumberOfCompass);
 
         Toast.makeText(this, "The compass appears to be pointed West.", Toast.LENGTH_SHORT).show();
     }
@@ -124,7 +125,8 @@ public class Inventory extends AppCompatActivity {
             return;
         }
         numberOfWater --;
-        waterNumber.setText("" + numberOfWater);
+        String textNumberOfWater =  Integer.toString(numberOfWater);
+        waterNumber.setText("" + textNumberOfWater);
 
         Toast.makeText(this, "The water got rid of the fire!", Toast.LENGTH_SHORT).show();
     }

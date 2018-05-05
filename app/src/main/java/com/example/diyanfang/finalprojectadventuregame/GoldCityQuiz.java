@@ -3,6 +3,8 @@ package com.example.diyanfang.finalprojectadventuregame;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -18,6 +20,32 @@ public class GoldCityQuiz extends AppCompatActivity{
         setContentView(R.layout.activity_gold_city_quiz);
 
         Intent goldQuizIntent = getIntent();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.menu_main, menu)
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.inventory:
+                Intent inventoryIntent = new Intent(this, Inventory.class);
+                startActivity(inventoryIntent);
+            case R.id.hint:
+                Toast.makeText(this, "No need for a hint, you can do it!", Toast.LENGTH_SHORT).show();
+//            case R.id.add:
+//                quizzes.add(getRandomQuiz());
+//                quizAdapter.notifyDataSetChanged();
+//                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void choiceA(View view){
