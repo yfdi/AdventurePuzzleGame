@@ -120,6 +120,17 @@ public class Inventory extends AppCompatActivity {
         finish();
     }
 
+    public void useGold(View view) {
+        if (numberOfGold == 0) {
+            return;
+        }
+        numberOfGold = numberOfGold - 1000;
+        String textNumberOfGold =  Integer.toString(numberOfGold);
+        goldNumber.setText("" + textNumberOfGold);
+
+//        Toast.makeText(this, "You gave the octopus your gold!", Toast.LENGTH_SHORT).show();
+    }
+
     public void useJunk(View view) {
 
         if (numberOfJunk == 0) {
@@ -132,17 +143,6 @@ public class Inventory extends AppCompatActivity {
         Toast.makeText(this, "You used what first appeared to be junk!", Toast.LENGTH_SHORT).show();
 
         finish();
-    }
-
-    public void useGold(View view) {
-        if (numberOfGold == 0) {
-            return;
-        }
-        numberOfGold --;
-        String textNumberOfGold =  Integer.toString(numberOfGold);
-        goldNumber.setText("" + textNumberOfGold);
-
-//        Toast.makeText(this, "You gave the octopus your gold!", Toast.LENGTH_SHORT).show();
     }
 
     public void useSandwich(View view) {

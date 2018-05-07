@@ -77,7 +77,15 @@
         <activity
             android:name=".Hint"
             android:label="Hint" />
-        <activity android:name=".EarthCity"></activity>
+        <activity android:name=".EarthCity"
+            android:label="Earth City"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean"/>
+        <activity android:name=".EarthCityQuiz"
+            android:label="Earth City Puzzle"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean"/>
+
     </application>
 
 </manifest>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diyanfang.finalprojectadventuregame.EarthCityQuiz">
+
+    <ImageView
+        android:id="@+id/close_earth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/earth_background" />
+
+    <ImageView
+        android:id="@+id/octopus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_toLeftOf="@+id/fox"
+        android:layout_toStartOf="@+id/fox"
+        android:src="@drawable/octopus"
+        android:onClick="octopus"/>
+
+    <ImageView
+        android:id="@+id/goldfish"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/fox"
+        android:layout_toLeftOf="@+id/rhinoceros"
+        android:layout_toStartOf="@+id/rhinoceros"
+        android:src="@drawable/goldfish"
+        android:onClick="goldfish"/>
+
+    <ImageView
+        android:id="@+id/fox"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/octopus"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/fox"
+        android:onClick="fox"/>
+
+    <ImageView
+        android:id="@+id/rhinoceros"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/goldfish"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/rhinoceros"
+        android:onClick="rhinoceros"/>
+
+    <TextView
+        android:id="@+id/earth_city_quiz"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rhinoceros"
+        android:layout_alignLeft="@+id/goldfish"
+        android:layout_alignStart="@+id/goldfish"
+        android:layout_marginBottom="23dp"
+        android:text="@string/earth_city_puzzle"
+        android:textColor="#FFF" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/goldfish"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_toLeftOf="@+id/octopus"
+        android:layout_toStartOf="@+id/octopus"
+        android:text="@string/earth_city_puzzle_description"
+        android:textColor="#FFF"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/octopus"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:text="@string/earth_city_puzzle_description2"
+        android:textColor="#FFF"
+        android:textSize="15dp" />
+
+</RelativeLayout>

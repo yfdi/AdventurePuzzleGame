@@ -17,11 +17,14 @@
         android:id="@+id/compass"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/cactus_speech"
-        android:layout_toStartOf="@+id/cactus_speech"
-        android:src="@drawable/compass"
-        android:onClick="collectCompass"/>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:onClick="collectCompass"
+        android:src="@drawable/compass" />
 
     <ImageView
         android:id="@+id/cactus"
@@ -39,11 +42,9 @@
         android:id="@+id/cactus_speech"
         android:layout_width="230dp"
         android:layout_height="100dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/compass"
-        android:layout_marginLeft="39dp"
-        android:layout_marginStart="39dp"
+        android:layout_above="@+id/compass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
         android:src="@drawable/cactus_speech" />
 
 

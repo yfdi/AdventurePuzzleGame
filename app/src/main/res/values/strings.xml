@@ -19,9 +19,8 @@
     <string name="aqua_puzzle_solved">You freed the dolphin!</string>
     <string name="dolphin_gift">It gives you a drop of water as as a gift!</string>
 
-    <string name="gold_city_opening">Gold is everywhere and doesn\'t worth a penny.</string>
-    <string name="gold_city_puzzle">There is gold everywhere but people are starving.
-        Gold doesn/’t worth a penny but food worth so much.   Look at the pattern on the left and select the correct button for
+    <string name="gold_city_opening">Gold is everywhere in the city but citizens here disregard it.</string>
+    <string name="gold_city_puzzle">Look at the pattern on the left and select the correct button for
         the corresponding image.</string>
 
     <string name="flame_city_opening">Fire is burning this city and turns it into a heat furnace.
@@ -31,6 +30,15 @@
     <string name="desert_city_opening">In desert city, living conditions are hostile for all the creatures.</string>
     <string name="desert_city_hint1">There is a compass on the floor. Wanna take a closer look?</string>
     <string name="desert_city_hint2">What’s the name of Kim and Kanye\’s child?</string>
+
+    <string name="earth_city_opening">It supposed to be consisted of water, land and people.
+        However, when you arrives, you see trashes everywhere.</string>
+    <string name="earth_city_opening2">Gold is wanted by everyone. </string>
+    <string name="earth_city_puzzle">PTOSUTCO ???</string>
+    <string name="earth_city_puzzle_description">As you are at this point, you get closer and closer
+        to finding out who is pollution the space! </string>
+    <string name="earth_city_puzzle_description2">You hire a detective using 1000 gold to find out
+        who\'s behind this! The detective took your money and left you with a note says "PTOSUTCO"! </string>
 
     <string name="hint">Hint</string>
 
