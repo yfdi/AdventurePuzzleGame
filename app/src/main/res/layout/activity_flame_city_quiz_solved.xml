@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diyanfang.finalprojectadventuregame.FlameCityQuizSolved">
+
+    <ImageView
+        android:id="@+id/close_flame_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/flame_city" />
+
+    <ImageView
+        android:id="@+id/flame_city_person"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="201dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:src="@drawable/normal_person" />
+
+    <ImageView
+        android:id="@+id/flame_city_thanks"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/flame_city_person"
+        android:layout_alignLeft="@+id/flame_city_person"
+        android:layout_alignStart="@+id/flame_city_person"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/flame_city_thanks" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/flame_city_thanks"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/flame_city_thanks"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/flame_city_thanks2" />
+</RelativeLayout>

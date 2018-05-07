@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/close_desert" />
+        android:src="@drawable/desert_city" />
 
     <ImageView
         android:id="@+id/transparent_image"
@@ -25,7 +25,7 @@
         android:layout_marginRight="14dp" />
 
     <ImageView
-        android:id="@+id/search_hint"
+        android:id="@+id/compass"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_alignLeft="@+id/speech_bubble"

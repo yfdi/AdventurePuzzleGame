@@ -58,10 +58,9 @@ public class GoldCityQuiz extends AppCompatActivity{
         Toast.makeText(this, "Close, but still not right.", Toast.LENGTH_SHORT).show();
     }
     public void choiceD(View view){
-        Toast.makeText(this, "Yes, you solved it! The people gave you 1,000 gold and a sandwich as a reward.", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Yes, you solved it! The people gave you 1,000 gold!", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(this, Inventory.class);
         intent.putExtra("Gold", 1000);
-        intent.putExtra("Sandwich", 1);
         intent.putExtra("Water",1);
         startActivityForResult(intent, 9001);
     }

@@ -63,23 +63,39 @@ public class Inventory extends AppCompatActivity {
     }
 
     public void useScissors(View view) {
-        if (numberOfScissors != 0) {
-            numberOfScissors = numberOfScissors - 1;
-            String textNumberOfScissors =  Integer.toString(numberOfScissors);
-            scissorsNumber.setText("" + textNumberOfScissors);
-            Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
 
-            waterNumber.setText("1");
-
-            Intent aquaCityQuizSolvedIntent = new Intent(this, AquaCityQuizSolved.class);
-            startActivity(aquaCityQuizSolvedIntent);
-
+        if (numberOfScissors == 0) {
             return;
         }
-        else{
+        numberOfScissors = numberOfScissors - 1;
+        String textNumberOfScissors =  Integer.toString(numberOfScissors);
+        scissorsNumber.setText("" + textNumberOfScissors);
+        Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
+
+        waterNumber.setText("1");
+
+        Intent aquaCityQuizSolvedIntent = new Intent(this, AquaCityQuizSolved.class);
+        startActivity(aquaCityQuizSolvedIntent);
+
+        finish();
+
+    }
+
+    public void useWater(View view) {
+
+        if (numberOfWater == 0) {
             return;
         }
+        numberOfWater --;
+        String textNumberOfWater =  Integer.toString(numberOfWater);
+        waterNumber.setText("" + textNumberOfWater);
 
+        Toast.makeText(this, "You gave the stranger some water", Toast.LENGTH_SHORT).show();
+
+        Intent flameCityQuizSolvedIntent = new Intent(this, FlameCityQuizSolved.class);
+        startActivity(flameCityQuizSolvedIntent);
+
+        finish();
     }
 
     public void useJunk(View view) {
@@ -104,7 +120,7 @@ public class Inventory extends AppCompatActivity {
         String textNumberOfGold =  Integer.toString(numberOfGold);
         goldNumber.setText("" + textNumberOfGold);
 
-        Toast.makeText(this, "You gave the octopus your gold!", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "You gave the octopus your gold!", Toast.LENGTH_SHORT).show();
     }
 
     public void useSandwich(View view) {
@@ -128,18 +144,8 @@ public class Inventory extends AppCompatActivity {
         String textNumberOfCompass =  Integer.toString(numberOfCompass);
         compassNumber.setText("" + textNumberOfCompass);
 
-        Toast.makeText(this, "The compass appears to be pointed West.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "The compass appears to be pointed North West.", Toast.LENGTH_SHORT).show();
     }
 
-    public void useWater(View view) {
 
-        if (numberOfWater == 0) {
-            return;
-        }
-        numberOfWater --;
-        String textNumberOfWater =  Integer.toString(numberOfWater);
-        waterNumber.setText("" + textNumberOfWater);
-
-        Toast.makeText(this, "The water got rid of the fire!", Toast.LENGTH_SHORT).show();
-    }
 }
