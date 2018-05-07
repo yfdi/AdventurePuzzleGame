@@ -60,6 +60,10 @@ public class Inventory extends AppCompatActivity {
         String textNumberOfWater = Integer.toString(numberOfWater);
         waterNumber.setText(textNumberOfWater);
 
+        numberOfCompass= inventoryIntent.getIntExtra("Compass", 0);
+        String textNumberOfCompass = Integer.toString(numberOfCompass);
+        compassNumber.setText(textNumberOfCompass);
+
     }
 
     public void useScissors(View view) {
@@ -94,6 +98,24 @@ public class Inventory extends AppCompatActivity {
 
         Intent flameCityQuizSolvedIntent = new Intent(this, FlameCityQuizSolved.class);
         startActivity(flameCityQuizSolvedIntent);
+
+        finish();
+    }
+
+
+    public void useCompass(View view) {
+
+        if (numberOfCompass == 0) {
+            return;
+        }
+        numberOfCompass --;
+        String textNumberOfCompass =  Integer.toString(numberOfCompass);
+        compassNumber.setText("" + textNumberOfCompass);
+
+        Toast.makeText(this, "You use the compass, but which direction would you go?", Toast.LENGTH_SHORT).show();
+
+        Intent desertCityQuizIntent = new Intent(this, DesertCityQuiz.class);
+        startActivity(desertCityQuizIntent);
 
         finish();
     }
@@ -135,17 +157,6 @@ public class Inventory extends AppCompatActivity {
         Toast.makeText(this, "Turns out you just had to give them a sandwich!", Toast.LENGTH_SHORT).show();
     }
 
-    public void useCompass(View view) {
-
-        if (numberOfCompass == 0) {
-            return;
-        }
-        numberOfCompass --;
-        String textNumberOfCompass =  Integer.toString(numberOfCompass);
-        compassNumber.setText("" + textNumberOfCompass);
-
-        Toast.makeText(this, "The compass appears to be pointed North West.", Toast.LENGTH_SHORT).show();
-    }
 
 
 }

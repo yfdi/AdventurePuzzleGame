@@ -27,7 +27,7 @@
 
     <ImageView
         android:id="@+id/flame_city_thanks"
-        android:layout_width="300dp"
+        android:layout_width="360dp"
         android:layout_height="100dp"
         android:layout_above="@+id/flame_city_person"
         android:layout_alignLeft="@+id/flame_city_person"
@@ -36,11 +36,11 @@
         android:src="@drawable/flame_city_thanks" />
 
     <ImageView
-        android:layout_width="160dp"
+        android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_alignEnd="@+id/flame_city_thanks"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/flame_city_thanks"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="41dp"
         android:src="@drawable/flame_city_thanks2" />
 </RelativeLayout>

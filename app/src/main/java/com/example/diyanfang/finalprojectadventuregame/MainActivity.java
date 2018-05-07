@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         quizzes.add(new Quiz(R.string.gold_city, R.string.about_gold_city, R.drawable.gold_city, false));
         quizzes.add(new Quiz(R.string.flame_city, R.string.about_flame_city, R.drawable.flame_city, false));
         quizzes.add(new Quiz(R.string.desert_city, R.string.about_desert_city, R.drawable.desert_city, false));
-        quizzes.add(new Quiz(R.string.earth_city, R.string.about_earth_city, R.drawable.earth_snapshot, false));
+        quizzes.add(new Quiz(R.string.earth_city, R.string.about_earth_city, R.drawable.earth_city, false));
     }
 
     @Override
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 //            lock.setImageResource(R.drawable.unlock);
 //            quizzes.set(3, temp3);
 //        } else if (num == 5) {
-//            Quiz temp4 = new Quiz(R.string.earth_city, R.string.about_earth_city, R.drawable.earth_snapshot, true);
+//            Quiz temp4 = new Quiz(R.string.earth_city, R.string.about_earth_city, R.drawable.earth_city, true);
 //            ImageView lock = (ImageView) findViewById(R.id.lock);
 //            lock.setImageResource(R.drawable.unlock);
 //            quizzes.set(4, temp4);

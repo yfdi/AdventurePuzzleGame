@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.diyanfang.finalprojectadventuregame.DesertCityQuiz">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/close_desert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/desert_city" />
+
+    <ImageView
+        android:id="@+id/close_compass"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/close_compass" />
+
+    <TextView
+        android:id="@+id/north_west"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/close_compass"
+        android:layout_alignStart="@+id/close_compass"
+        android:layout_alignTop="@+id/close_compass"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="29dp"
+        android:text="NW"
+        android:textStyle="bold"
+        android:onClick="clickNW"/>
+
+    <TextView
+        android:id="@+id/north_east"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/north_west"
+        android:layout_alignBottom="@+id/north_west"
+        android:layout_alignEnd="@+id/close_compass"
+        android:layout_alignRight="@+id/close_compass"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="NE"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/south_west"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/close_compass"
+        android:layout_alignEnd="@+id/north_west"
+        android:layout_alignRight="@+id/north_west"
+        android:layout_marginBottom="25dp"
+        android:text="SW"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/south_east"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/south_west"
+        android:layout_alignBottom="@+id/south_west"
+        android:layout_alignLeft="@+id/north_east"
+        android:layout_alignStart="@+id/north_east"
+        android:text="SE"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/cactus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="61dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/cactus" />
+
+    <ImageView
+        android:id="@+id/cactus_speech2"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/north_east"
+        android:layout_alignRight="@+id/north_east"
+        android:layout_below="@+id/south_west"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/cactus_speech2" />
+
+</RelativeLayout>

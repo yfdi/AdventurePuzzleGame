@@ -8,10 +8,10 @@
     <string name="earth_city">Earth City</string>
 
     <string name="about_aqua_city">Sea creatures are swimming around you.</string>
-    <string name="about_gold_city">In this city, gold is everywhere… </string>
+    <string name="about_gold_city">You can see gold everywhere. </string>
     <string name="about_flame_city">Fire is burning this city and turns it into a heat furnace.</string>
-    <string name="about_desert_city">It is a barren area where little rain occurs. </string>
-    <string name="about_earth_city">It is consisted of water, land and people.</string>
+    <string name="about_desert_city">It is a barren area where living condition is hostile. </string>
+    <string name="about_earth_city">Here are water, land and people.</string>
 
     <string name="aqua_city_opening">You see dolphins swimming in groups, playing with each other.
         However, one of them gets caught in a tangle of space pollution.
@@ -20,19 +20,17 @@
     <string name="dolphin_gift">It gives you a drop of water as as a gift!</string>
 
     <string name="gold_city_opening">Gold is everywhere and doesn\'t worth a penny.</string>
-    <string name="desert_city_opening">In desert city, living conditions are hostile for all the creatures.</string>
     <string name="gold_city_puzzle">There is gold everywhere but people are starving.
         Gold doesn/’t worth a penny but food worth so much.   Look at the pattern on the left and select the correct button for
         the corresponding image.</string>
 
     <string name="flame_city_opening">Fire is burning this city and turns it into a heat furnace.
         There is no sign of any survivors and no sign of a path to get through.</string>
-    <string name="flame_city_puzzle">What could you use to put out the flames?</string>
-    <string name="flame_city_compass">The fire is out! There is a compass on the floor with a hint.</string>
     <string name="flame_city_hint">Hint: Remember the water the dolphin gave to you?</string>
 
-    <string name="cactus_speech">What’s the name of Kim and Kanye\’s child?</string>
-
+    <string name="desert_city_opening">In desert city, living conditions are hostile for all the creatures.</string>
+    <string name="desert_city_hint1">There is a compass on the floor. Wanna take a closer look?</string>
+    <string name="desert_city_hint2">What’s the name of Kim and Kanye\’s child?</string>
 
     <string name="hint">Hint</string>
 

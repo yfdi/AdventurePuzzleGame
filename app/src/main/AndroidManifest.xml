@@ -31,7 +31,7 @@
             tools:targetApi="jelly_bean" />
         <activity
             android:name=".AquaCityQuiz"
-            android:label="Aqua City Quiz"
+            android:label="Aqua City Puzzle"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
         <activity
@@ -46,7 +46,7 @@
             tools:targetApi="jelly_bean" />
         <activity
             android:name=".GoldCityQuiz"
-            android:label="Gold City Quiz"
+            android:label="Gold City Puzzle"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
         <activity
@@ -56,7 +56,7 @@
             tools:targetApi="jelly_bean" />
         <activity
             android:name=".FlameCityQuiz"
-            android:label="Flame City Quiz"
+            android:label="Flame City Puzzle"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
         <activity
@@ -70,9 +70,14 @@
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
         <activity
+            android:name=".DesertCityQuiz"
+            android:label="Desert City Puzzle"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
             android:name=".Hint"
             android:label="Hint" />
-        <activity android:name=".DesertCityQuiz"></activity>
+        <activity android:name=".EarthCity"></activity>
     </application>
 
 </manifest>

@@ -100,8 +100,10 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
         } if (quizName.getText().toString().equalsIgnoreCase("desert city")){
             Intent desertCityIntent = new Intent(context, DesertCity.class);
             context.startActivity(desertCityIntent);
+        } if (quizName.getText().toString().equalsIgnoreCase("earth city")){
+            Intent earthCityIntent = new Intent(context, EarthCity.class);
+            context.startActivity(earthCityIntent);
         }
-
     }
 
 }

@@ -95,6 +95,33 @@
         <TableRow>
             <TextView
                 android:layout_column="1"
+                android:text="Compass"
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
+            <TextView
+                android:id="@+id/use_compass"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Use"
+                android:padding="3dip"
+                android:onClick="useCompass"
+                style="@style/InventoryTheme"/>
+            <TextView
+                android:id="@+id/number_of_compass"
+                android:layout_column="3"
+                android:text="0"
+                android:gravity="end"
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
                 android:text="Gold"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
@@ -169,32 +196,6 @@
                 style="@style/InventoryTheme"/>
         </TableRow>
 
-        <View
-            android:layout_height="2dip"
-            android:background="#FF909090" />
-
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="Compass"
-                android:padding="3dip"
-                style="@style/InventoryTheme"/>
-            <TextView
-                android:id="@+id/use_compass"
-                android:layout_column="2"
-                android:text="Use"
-                android:gravity="center"
-                android:padding="3dip"
-                android:onClick="useCompass"
-                style="@style/InventoryTheme"/>
-            <TextView
-                android:id="@+id/number_of_compass"
-                android:layout_column="3"
-                android:text="0"
-                android:gravity="end"
-                android:padding="3dip"
-                style="@style/InventoryTheme"/>
-        </TableRow>
 
         <View
 
