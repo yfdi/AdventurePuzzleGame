@@ -34,17 +34,44 @@
             android:label="Aqua City Quiz"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
+        <activity android:name=".AquaCityQuizSolved"
+            android:label="You freed the dolphin!"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean"
+            />
+
         <activity
             android:name=".GoldCity"
             android:label="Gold City"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
-
         <activity
             android:name=".GoldCityQuiz"
             android:label="Gold City Quiz"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
+
+        <activity
+            android:name=".FlameCity"
+            android:label="Flame City"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".FlameCityQuiz"
+            android:label="Flame City Quiz"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".DesertCity"
+            android:label="Desert City"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+
+        <activity android:name=".Hint"
+            android:label="Hint"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean"/>
+
 
     </application>
 

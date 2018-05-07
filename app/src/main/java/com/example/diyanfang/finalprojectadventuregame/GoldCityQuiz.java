@@ -35,14 +35,13 @@ public class GoldCityQuiz extends AppCompatActivity{
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.inventory:
+                int numWater = 1;
                 Intent inventoryIntent = new Intent(this, Inventory.class);
+                inventoryIntent.putExtra("Water", numWater);
                 startActivity(inventoryIntent);
+                return true;
             case R.id.hint:
                 Toast.makeText(this, "No need for a hint, you can do it!", Toast.LENGTH_SHORT).show();
-//            case R.id.add:
-//                quizzes.add(getRandomQuiz());
-//                quizAdapter.notifyDataSetChanged();
-//                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

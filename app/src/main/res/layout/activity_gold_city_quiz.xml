@@ -2,25 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/game_puzzle"/>
-    <TextView
+        android:layout_marginTop="30dp"
+        android:src="@drawable/game_puzzle1"
+        android:layout_gravity="center"/>
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/game_puzzle2"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="100dp"
         android:textColor="@color/cardview_dark_background"
-        android:textSize="24sp"
-        android:layout_margin="36dp"
-        android:text="@string/goldCityPuzzle"/>
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/gold_city_puzzle"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/buttonA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="48dp"
+            android:layout_marginLeft="55dp"
             android:background="@color/colorPrimary"
             android:textColor="@color/cardview_light_background"
             android:text="A"
@@ -43,7 +56,7 @@
             android:id="@+id/buttonC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="48dp"
+            android:layout_marginLeft="55dp"
             android:layout_marginTop="12dp"
             android:background="@color/cardview_light_background"
             android:text="C"

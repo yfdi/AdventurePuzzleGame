@@ -89,11 +89,14 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
     public void enterCity(){
 
         if (quizName.getText().toString().equalsIgnoreCase("aqua city")){
-            Intent quizIntent = new Intent(context, AquaCity.class);
-            context.startActivity(quizIntent);
+            Intent aquaCityIntent = new Intent(context, AquaCity.class);
+            context.startActivity(aquaCityIntent);
         } if (quizName.getText().toString().equalsIgnoreCase("gold city")){
-            Intent quizIntent = new Intent(context, GoldCity.class);
-            context.startActivity(quizIntent);
+            Intent goldCityIntent = new Intent(context, GoldCity.class);
+            context.startActivity(goldCityIntent);
+        } if (quizName.getText().toString().equalsIgnoreCase("flame city")){
+            Intent flameCityIntent = new Intent(context, FlameCity.class);
+            context.startActivity(flameCityIntent);
         }
 
     }

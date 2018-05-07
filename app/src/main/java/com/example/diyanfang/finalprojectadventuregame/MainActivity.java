@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.inventory:
                 Intent inventoryIntent = new Intent(this, Inventory.class);
                 startActivity(inventoryIntent);
+                return true;
             case R.id.hint:
                 Toast.makeText(this, "No need for a hint, you can do it!", Toast.LENGTH_SHORT).show();
 //            case R.id.add:

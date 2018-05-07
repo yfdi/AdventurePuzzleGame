@@ -55,6 +55,7 @@ public class Inventory extends AppCompatActivity {
         numberOfGold = inventoryIntent.getIntExtra("Gold", 0);
         String textNumberOfGold = Integer.toString(numberOfGold);
         goldNumber.setText(textNumberOfGold);
+
     }
 
     public void useScissors(View view) {
@@ -63,6 +64,9 @@ public class Inventory extends AppCompatActivity {
             String textNumberOfScissors =  Integer.toString(numberOfScissors);
             scissorsNumber.setText("" + textNumberOfScissors);
             Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
+
+            Intent quizSolvedIntent = new Intent(this, AquaCityQuizSolved.class);
+            startActivity(quizSolvedIntent);
         }
         else{
             return;

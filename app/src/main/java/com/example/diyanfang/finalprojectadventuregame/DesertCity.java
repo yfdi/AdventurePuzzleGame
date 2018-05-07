@@ -10,20 +10,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AquaCityQuiz extends AppCompatActivity {
+public class DesertCity extends AppCompatActivity {
 
-    TextView dolphinText;
-    ImageView dolphinQuizImage;
+    ImageView waterCollect;
+    TextView cactusSpeech;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aqua_city_quiz);
+        setContentView(R.layout.activity_desert_city);
 
-        Intent aquaQuizIntent = getIntent();
-
-        dolphinQuizImage = findViewById(R.id.dolphin_tangled);
-        dolphinText = findViewById(R.id.dolphin_textView);
+        waterCollect = findViewById(R.id.transparent_image);
+        cactusSpeech = findViewById(R.id.speech_bubble_text);
     }
 
     @Override
@@ -39,7 +38,9 @@ public class AquaCityQuiz extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.inventory:
+                int numGold = 1000;
                 Intent inventoryIntent = new Intent(this, Inventory.class);
+                inventoryIntent.putExtra("Gold", numGold);
                 startActivity(inventoryIntent);
                 return true;
             case R.id.hint:
@@ -55,9 +56,7 @@ public class AquaCityQuiz extends AppCompatActivity {
         scissorsIntent.putExtra("Scissors", numScissors);
         startActivity(scissorsIntent);
 
-//        dolphinQuizImage.setImageResource(R.drawable.dolphin_set_free);
-//        dolphinText.setText(R.string.aqua_puzzle_solved);
+        waterCollect.setImageResource(R.drawable.dolphin_set_free);
+        cactusSpeech.setText(R.string.aqua_puzzled_solved);
     }
-
-
 }
