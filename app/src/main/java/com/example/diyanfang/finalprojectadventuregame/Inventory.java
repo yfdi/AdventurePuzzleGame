@@ -56,6 +56,10 @@ public class Inventory extends AppCompatActivity {
         String textNumberOfGold = Integer.toString(numberOfGold);
         goldNumber.setText(textNumberOfGold);
 
+        numberOfWater= inventoryIntent.getIntExtra("Water", 0);
+        String textNumberOfWater = Integer.toString(numberOfWater);
+        waterNumber.setText(textNumberOfWater);
+
     }
 
     public void useScissors(View view) {
@@ -65,14 +69,17 @@ public class Inventory extends AppCompatActivity {
             scissorsNumber.setText("" + textNumberOfScissors);
             Toast.makeText(this, "You freed the dolphin!", Toast.LENGTH_SHORT).show();
 
-            Intent quizSolvedIntent = new Intent(this, AquaCityQuizSolved.class);
-            startActivity(quizSolvedIntent);
+            waterNumber.setText("1");
+
+            Intent aquaCityQuizSolvedIntent = new Intent(this, AquaCityQuizSolved.class);
+            startActivity(aquaCityQuizSolvedIntent);
+
+            return;
         }
         else{
             return;
         }
 
-        finish();
     }
 
     public void useJunk(View view) {
@@ -85,6 +92,7 @@ public class Inventory extends AppCompatActivity {
         junkNumber.setText("" + textNumberOfJunk);
 
         Toast.makeText(this, "You used what first appeared to be junk!", Toast.LENGTH_SHORT).show();
+
         finish();
     }
 

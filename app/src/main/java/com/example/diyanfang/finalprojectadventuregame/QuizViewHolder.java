@@ -83,7 +83,7 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
             }
         });
 
-        lock.setImageResource(R.drawable.unlock);
+//        lock.setImageResource(R.drawable.unlock);
     }
 
     public void enterCity(){
@@ -97,6 +97,9 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
         } if (quizName.getText().toString().equalsIgnoreCase("flame city")){
             Intent flameCityIntent = new Intent(context, FlameCity.class);
             context.startActivity(flameCityIntent);
+        } if (quizName.getText().toString().equalsIgnoreCase("desert city")){
+            Intent desertCityIntent = new Intent(context, DesertCity.class);
+            context.startActivity(desertCityIntent);
         }
 
     }

@@ -44,6 +44,7 @@ public class AquaCityQuiz extends AppCompatActivity {
                 return true;
             case R.id.hint:
                 Toast.makeText(this, "No need for a hint, you can do it!", Toast.LENGTH_SHORT).show();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

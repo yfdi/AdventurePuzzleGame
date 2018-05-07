@@ -33,6 +33,9 @@
 
     <string name="cactus_speech">“I’m so thirsty!”</string>
 
+
+    <string name="hint">Hint</string>
+
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="next_button">Next</string>

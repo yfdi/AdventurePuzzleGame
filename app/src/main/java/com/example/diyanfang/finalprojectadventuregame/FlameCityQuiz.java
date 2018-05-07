@@ -48,6 +48,7 @@ public class FlameCityQuiz extends AppCompatActivity {
                 Intent inventoryIntent = new Intent(this, Inventory.class);
                 inventoryIntent.putExtra("Gold", numGold);
                 inventoryIntent.putExtra("Sandwich", numSandwich);
+                inventoryIntent.putExtra("Water", numWater);
                 startActivity(inventoryIntent);
                 return true;
             case R.id.hint:

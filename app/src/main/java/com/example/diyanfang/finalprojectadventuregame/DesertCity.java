@@ -57,6 +57,6 @@ public class DesertCity extends AppCompatActivity {
         startActivity(scissorsIntent);
 
         waterCollect.setImageResource(R.drawable.dolphin_set_free);
-        cactusSpeech.setText(R.string.aqua_puzzled_solved);
+        cactusSpeech.setText(R.string.cactus_speech);
     }
 }

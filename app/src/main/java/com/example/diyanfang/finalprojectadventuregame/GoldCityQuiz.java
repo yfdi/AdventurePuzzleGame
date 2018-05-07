@@ -42,6 +42,7 @@ public class GoldCityQuiz extends AppCompatActivity{
                 return true;
             case R.id.hint:
                 Toast.makeText(this, "No need for a hint, you can do it!", Toast.LENGTH_SHORT).show();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -61,6 +62,7 @@ public class GoldCityQuiz extends AppCompatActivity{
         Intent intent = new Intent(this, Inventory.class);
         intent.putExtra("Gold", 1000);
         intent.putExtra("Sandwich", 1);
+        intent.putExtra("Water",1);
         startActivityForResult(intent, 9001);
     }
 

@@ -35,7 +35,7 @@
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
         <activity android:name=".AquaCityQuizSolved"
-            android:label="You freed the dolphin!"
+            android:label="Aqua City"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean"
             />

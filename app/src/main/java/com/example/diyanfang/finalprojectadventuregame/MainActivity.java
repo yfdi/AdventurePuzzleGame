@@ -67,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.hint:
                 Toast.makeText(this, "No need for a hint, you can do it!", Toast.LENGTH_SHORT).show();
+                return true;
+//            case R.id.login:
+//                Intent loginIntent = new Intent(this, Login.class);
+//                startActivity(loginIntent);
+//                return true;
 //            case R.id.add:
 //                quizzes.add(getRandomQuiz());
 //                quizAdapter.notifyDataSetChanged();
