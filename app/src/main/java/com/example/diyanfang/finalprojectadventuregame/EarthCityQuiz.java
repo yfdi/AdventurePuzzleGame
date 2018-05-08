@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class EarthCityQuiz extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class EarthCityQuiz extends AppCompatActivity {
     ImageView fox;
     ImageView goldfish;
     ImageView rhinoceros;
+    TextView scrambledWord;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class EarthCityQuiz extends AppCompatActivity {
         fox = findViewById(R.id.fox);
         goldfish = findViewById(R.id.goldfish);
         rhinoceros = findViewById(R.id.rhinoceros);
+        scrambledWord = findViewById(R.id.scrambled_word);
     }
 
     @Override
@@ -65,5 +68,6 @@ public class EarthCityQuiz extends AppCompatActivity {
     public void  octopus(View view){
         Toast.makeText(this, "Awesome,The scrambled word is OCTOPUS! " +
                 "\nIt turns out that there is an octopus lives here that is the source of pollution.", Toast.LENGTH_LONG).show();
+        scrambledWord.setText("OCTOPUS!");
     }
 }

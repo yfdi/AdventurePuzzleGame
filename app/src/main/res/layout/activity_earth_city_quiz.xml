@@ -58,19 +58,19 @@
         android:onClick="rhinoceros"/>
 
     <TextView
-        android:id="@+id/earth_city_quiz"
+        android:id="@+id/scrambled_word"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/rhinoceros"
         android:layout_alignLeft="@+id/goldfish"
         android:layout_alignStart="@+id/goldfish"
         android:layout_marginBottom="23dp"
-        android:text="@string/earth_city_puzzle"
+        android:text="@string/scrambled_word"
         android:textColor="#FFF" />
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/earth_city_puzzle_description"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/goldfish"
@@ -84,11 +84,12 @@
 
 
     <TextView
+        android:id="@+id/earth_city_puzzle_description2"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/octopus"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3"
+        android:layout_alignLeft="@+id/earth_city_puzzle_description"
+        android:layout_alignStart="@+id/earth_city_puzzle_description"
         android:text="@string/earth_city_puzzle_description2"
         android:textColor="#FFF"
         android:textSize="15dp" />
